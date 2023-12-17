@@ -1,0 +1,233 @@
+{% load static %}
+<header class="section page-header">
+    <!-- RD Navbar-->
+    <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
+            data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
+            data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-aside-outer">
+                <div class="rd-navbar-aside">
+                    <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1"
+                        data-rd-navbar-toggle=".rd-navbar-collapse">
+                        <span></span>
+                    </div>
+                    <ul class="rd-navbar-aside-list rd-navbar-collapse">
+                        <li>
+                            <div class="block-inline unit unit-spacing-xs align-items-center">
+                                <div class="unit-left"><span class="icon text-middle mdi mdi-phone"></span></div>
+                                <div class="unit-body"><a href="tel:#">1-800-1234-567</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="block-inline unit unit-spacing-xs align-items-center">
+                                <div class="unit-left"><span class="icon text-middle mdi mdi-email-outline"></span>
+                                </div>
+                                <div class="unit-body"><a href="mailto:#">info@demolink.org</a></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="rd-navbar-aside-item">
+                        <div class="block-inline">
+                            <button class="unit unit-spacing-xs align-items-center"
+                                data-rd-navbar-toggle="#navbar-login-register"><span class="unit-left"><span
+                                        class="icon text-middle mdi mdi-login"></span></span><span
+                                    class="unit-body"><span>Login/Register</span></span></button>
+                        </div>
+                        <div class="rd-navbar-popup bg-gray-12" id="navbar-login-register">
+                            <!-- Bootstrap tabs-->
+                            <div class="tabs-custom tabs-horizontal tabs-line" id="navbar-tabs">
+                                <!-- Nav tabs-->
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item" role="presentation"><a class="nav-link active"
+                                            href="#navbar-tabs-1" data-toggle="tab">Login</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" href="#navbar-tabs-2"
+                                            data-toggle="tab">Register</a></li>
+                                </ul>
+                                <!-- Tab panes-->
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="navbar-tabs-1">
+                                        <form class="rd-form form-1">
+                                            <div class="form-wrap">
+                                                <input class="form-input" id="navbar-login-email" type="email"
+                                                    name="email" data-constraints="@Email @Required">
+                                                <label class="form-label" for="navbar-login-email">E-mail</label>
+                                            </div>
+                                            <div class="form-wrap">
+                                                <input class="form-input" id="navbar-login-password" type="password"
+                                                    name="password" data-constraints="@Required">
+                                                <label class="form-label" for="navbar-login-password">Password</label>
+                                            </div>
+                                            <div class="form-wrap">
+                                                <button class="button button-sm button-primary button-block"
+                                                    type="submit">Sign in</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="navbar-tabs-2">
+                                        <form class="rd-form form-1">
+                                            <div class="form-wrap">
+                                                <input class="form-input" id="register-name" type="text" name="username"
+                                                    data-constraints="@Required">
+                                                <label class="form-label" for="register-name">Username</label>
+                                            </div>
+                                            <div class="form-wrap">
+                                                <input class="form-input" id="register-email" type="email" name="email"
+                                                    data-constraints="@Email @Required">
+                                                <label class="form-label" for="register-email">E-mail</label>
+                                            </div>
+                                            <div class="form-wrap">
+                                                <input class="form-input" id="register-password" type="password"
+                                                    name="password" data-constraints="@Required">
+                                                <label class="form-label" for="register-password">Password</label>
+                                            </div>
+                                            <div class="form-wrap">
+                                                <input class="form-input" id="register-password-confirm" type="password"
+                                                    name="password" data-constraints="@Required">
+                                                <label class="form-label" for="register-password-confirm">Confirm
+                                                    Password</label>
+                                            </div>
+                                            <div class="form-wrap">
+                                                <button class="button button-sm button-primary button-block"
+                                                    type="submit">Create an
+                                                    Account</button>
+                                            </div>
+                                            <div class="form-wrap">
+                                                <div class="text-decoration-lines"><span
+                                                        class="text-decoration-lines-content">or enter
+                                                        with</span></div>
+                                            </div>
+                                            <div class="form-wrap">
+                                                <div class="button-group"><a
+                                                        class="button button-facebook button-icon button-icon-only"
+                                                        href="#" aria-label="Facebook"><span
+                                                            class="icon mdi mdi mdi-facebook"></span></a><a
+                                                        class="button button-twitter button-icon button-icon-only"
+                                                        href="#" aria-label="Twitter"><span
+                                                            class="icon mdi mdi-twitter"></span></a><a
+                                                        class="button button-google button-icon button-icon-only"
+                                                        href="#" aria-label="Google+"><span
+                                                            class="icon mdi mdi-google"></span></a></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rd-navbar-main-outer">
+                <div class="rd-navbar-main">
+                    <!-- RD Navbar Panel-->
+                    <div class="rd-navbar-panel">
+                        <!-- RD Navbar Toggle-->
+                        <button class="rd-navbar-toggle"
+                            data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                        <!-- RD Navbar Brand-->
+                        <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark"
+                                    src="{% static 'images/logo-default-142x41.png' %}" alt="" width="142" height="41"
+                                    srcset="{% static 'images/logo-default-284x82.png' 2x %}" /><img
+                                    class="brand-logo-light" src="{% static 'images/logo-inverse-121x61.png' %}" alt=""
+                                    width="121" height="61"
+                                    srcset="{% static 'images/logo-inverse-284x82.png' 2x %}" /></a>
+                        </div>
+                    </div>
+                    <div class="rd-navbar-nav-wrap">
+                        <!-- RD Navbar Nav-->
+                        <ul class="rd-navbar-nav">
+                            <li class="rd-nav-item active"><a class="rd-nav-link" href="{% url 'home' %}">Home</a>
+                            </li>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'houses' %}">Houses</a>
+                                <!-- RD Navbar Dropdown-->
+                                <ul class="rd-menu rd-navbar-dropdown">
+                                    <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                                            href="{% url 'houses' %}">For Seal</a></li>
+                                    <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                                            href="{% url 'houses' %}">For Rent</a></li>
+                                    <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                                            href="{% url 'houses' %}">Calculator</a></li>
+                                  
+                                </ul>
+                            </li>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'about-us' %}">About Us</a>
+                            </li>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="#">Blog</a>
+                                <!-- RD Navbar Dropdown-->
+                                <ul class="rd-menu rd-navbar-dropdown">
+                                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-post.html">Blog
+                                            post</a></li>
+                                </ul>
+                            </li>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="#">Pages</a>
+                                <!-- RD Navbar Megamenu-->
+                                <ul class="rd-menu rd-navbar-megamenu">
+                                    <li class="rd-megamenu-item">
+                                        <h6 class="rd-megamenu-title">Pages 1</h6>
+                                        <ul class="rd-megamenu-list">
+                                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
+                                                    href="agents.html">Agents</a>
+                                            </li>
+                                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
+                                                    href="agent-single-page.html">Agent Single Page</a></li>
+                                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
+                                                    href="careers.html">Careers</a>
+                                            </li>
+                                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
+                                                    href="gallery.html">Gallery</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="rd-megamenu-item">
+                                        <h6 class="rd-megamenu-title">Pages 2</h6>
+                                        <ul class="rd-megamenu-list">
+                                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
+                                                    href="search-results.html">Search results</a></li>
+                                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
+                                                    href="coming-soon.html">Coming
+                                                    Soon</a></li>
+                                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
+                                                    href="404.html">404</a>
+                                            </li>
+                                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
+                                                    href="#">Privacy Policy</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="rd-megamenu-item">
+                                        <h6 class="rd-megamenu-title">Elements</h6>
+                                        <ul class="rd-megamenu-list">
+                                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
+                                                    href="#">Typography</a></li>
+                                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
+                                                    href="#">Buttons</a>
+                                            </li>
+                                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
+                                                    href="forms.html">Forms</a>
+                                            </li>
+                                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
+                                                    href="tabs-and-accordions.html">Tabs and accordions</a></li>
+                                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
+                                                    href="progress-bars.html">Progress bars</a></li>
+                                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
+                                                    href="tables.html">Tables</a>
+                                            </li>
+                                            <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"
+                                                    href="grid-system.html">Grid
+                                                    System</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'contact-us' %}">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="rd-navbar-main-item"><a class="button button-sm button-primary" href="#">Submit
+                                property</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
