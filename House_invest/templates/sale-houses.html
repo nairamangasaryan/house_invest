@@ -7,7 +7,7 @@
 <section class="breadcrumbs-custom bg-image context-dark" data-opacity="37"
   style="background-image: url({% static 'images/for_rent/rent_slide2.jpg' %});">
   <div class="container">
-    <h2 class="breadcrumbs-custom-title">Տրվում են վարձակալությամբ</h2>
+    <h2 class="breadcrumbs-custom-title">Վաճառվում են</h2>
   </div>
 </section>
 <section class="section-xs bg-white">
@@ -65,7 +65,7 @@
           </div>
           <div class="col-12">
             <div class="row row-50">
-              {% for p in properties_rent%}
+              {% for p in properties_sale%}
               <div class="col-md-6 col-lg-12 col-xl-6">
 
                 <!-- Product Classic-->
@@ -77,7 +77,7 @@
                         src="{{p.image.url}}" alt="" width="480" height="287" />
 
                     </div>
-                    <div class="product-classic-price"><span>{{p.price}} ամսեկան</span></div>
+                    <div class="product-classic-price"><span>{{p.price}}</span></div>
                   </div>
                   <h4 class="product-classic-title"><a href="single-property.html">{{p.title|truncatewords:5}}</a>
                   </h4>
@@ -89,175 +89,13 @@
                     <li><span class="icon hotel-icon-10"></span><span>{{p.bathrooms}} սանհանգույց </span>
                     </li>
                     <li><span class="icon hotel-icon-05"></span><span>{{p.rooms}} սենյակ </span></li>
-                    <li><span class="icon hotel-icon-26"></span><span>Կայանատեղի {{p.parking}}</span></li>
+                    <li><span class="icon hotel-icon-26"></span><span>{{p.parking}}</span></li>
                   </ul>
                 </article>
               </div>
               {% endfor %}
-              <div class="col-md-6 col-lg-12 col-xl-6">
-                <!-- Product Classic-->
-                <article class="product-classic">
-                  <div class="product-classic-media">
-                    <div class="owl-carousel" data-items="1" data-nav="true" data-stage-padding="0" data-loop="false"
-                      data-margin="0" data-mouse-drag="false"><img src="images/featured-properties-05-480x287.jpg"
-                        alt="" width="480" height="287" /><img src="images/featured-properties-06-480x287.jpg" alt=""
-                        width="480" height="287" /><img src="images/featured-properties-07-480x287.jpg" alt=""
-                        width="480" height="287" /><img src="images/featured-properties-08-480x287.jpg" alt=""
-                        width="480" height="287" />
-                    </div>
-                    <div class="product-classic-price"><span>$2500\mo</span></div>
-                  </div>
-                  <h4 class="product-classic-title"><a href="single-property.html">923 Folsom St, San Francisco</a></h4>
-                  <div class="product-classic-divider"></div>
-                  <ul class="product-classic-list">
-                    <li><span class="icon mdi mdi-vector-square"></span><span>535 Sq Ft</span></li>
-                    <li><span class="icon hotel-icon-10"></span><span>2 Bathrooms</span></li>
-                    <li><span class="icon hotel-icon-05"></span><span>3 Bedrooms</span></li>
-                    <li><span class="icon hotel-icon-26"></span><span>1 Garage</span></li>
-                  </ul>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-12 col-xl-6">
-                <!-- Product Classic-->
-                <article class="product-classic">
-                  <div class="product-classic-media">
-                    <div class="owl-carousel" data-items="1" data-nav="true" data-stage-padding="0" data-loop="false"
-                      data-margin="0" data-mouse-drag="false"><img src="images/featured-properties-09-480x287.jpg"
-                        alt="" width="480" height="287" /><img src="images/featured-properties-10-480x287.jpg" alt=""
-                        width="480" height="287" /><img src="images/featured-properties-11-480x287.jpg" alt=""
-                        width="480" height="287" /><img src="images/featured-properties-12-480x287.jpg" alt=""
-                        width="480" height="287" />
-                    </div>
-                    <div class="product-classic-price"><span>$9340\mo</span></div>
-                  </div>
-                  <h4 class="product-classic-title"><a href="single-property.html">225 Maywood Dr, San Francisco</a>
-                  </h4>
-                  <div class="product-classic-divider"></div>
-                  <ul class="product-classic-list">
-                    <li><span class="icon mdi mdi-vector-square"></span><span>435 Sq Ft</span></li>
-                    <li><span class="icon hotel-icon-10"></span><span>1 Bathroom</span></li>
-                    <li><span class="icon hotel-icon-05"></span><span>1 Bedroom</span></li>
-                    <li><span class="icon hotel-icon-26"></span><span>1 Garage</span></li>
-                  </ul>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-12 col-xl-6">
-                <!-- Product Classic-->
-                <article class="product-classic">
-                  <div class="product-classic-media">
-                    <div class="owl-carousel" data-items="1" data-nav="true" data-stage-padding="0" data-loop="false"
-                      data-margin="0" data-mouse-drag="false"><img src="images/featured-properties-13-480x287.jpg"
-                        alt="" width="480" height="287" /><img src="images/featured-properties-14-480x287.jpg" alt=""
-                        width="480" height="287" /><img src="images/featured-properties-15-480x287.jpg" alt=""
-                        width="480" height="287" /><img src="images/featured-properties-16-480x287.jpg" alt=""
-                        width="480" height="287" />
-                    </div>
-                    <div class="product-classic-price"><span>$5500\mo</span></div>
-                  </div>
-                  <h4 class="product-classic-title"><a href="single-property.html">35 Pond St, New York</a></h4>
-                  <div class="product-classic-divider"></div>
-                  <ul class="product-classic-list">
-                    <li><span class="icon mdi mdi-vector-square"></span><span>430 Sq Ft</span></li>
-                    <li><span class="icon hotel-icon-10"></span><span>2 Bathrooms</span></li>
-                    <li><span class="icon hotel-icon-05"></span><span>3 Bedrooms</span></li>
-                    <li><span class="icon hotel-icon-26"></span><span>1 Garage</span></li>
-                  </ul>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-12 col-xl-6">
-                <!-- Product Classic-->
-                <article class="product-classic">
-                  <div class="product-classic-media">
-                    <div class="owl-carousel" data-items="1" data-nav="true" data-stage-padding="0" data-loop="false"
-                      data-margin="0" data-mouse-drag="false"><img src="images/featured-properties-17-480x287.jpg"
-                        alt="" width="480" height="287" /><img src="images/featured-properties-18-480x287.jpg" alt=""
-                        width="480" height="287" /><img src="images/featured-properties-19-480x287.jpg" alt=""
-                        width="480" height="287" /><img src="images/featured-properties-20-480x287.jpg" alt=""
-                        width="480" height="287" />
-                    </div>
-                    <div class="product-classic-price"><span>$2520\mo</span></div>
-                  </div>
-                  <h4 class="product-classic-title"><a href="single-property.html">182 3rd St, Seattle</a></h4>
-                  <div class="product-classic-divider"></div>
-                  <ul class="product-classic-list">
-                    <li><span class="icon mdi mdi-vector-square"></span><span>630 Sq Ft</span></li>
-                    <li><span class="icon hotel-icon-10"></span><span>3 Bathrooms</span></li>
-                    <li><span class="icon hotel-icon-05"></span><span>3 Bedrooms</span></li>
-                    <li><span class="icon hotel-icon-26"></span><span>2 Garages</span></li>
-                  </ul>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-12 col-xl-6">
-                <!-- Product Classic-->
-                <article class="product-classic">
-                  <div class="product-classic-media">
-                    <div class="owl-carousel" data-items="1" data-nav="true" data-stage-padding="0" data-loop="false"
-                      data-margin="0" data-mouse-drag="false"><img src="images/featured-properties-21-480x287.jpg"
-                        alt="" width="480" height="287" /><img src="images/featured-properties-22-480x287.jpg" alt=""
-                        width="480" height="287" /><img src="images/featured-properties-23-480x287.jpg" alt=""
-                        width="480" height="287" /><img src="images/featured-properties-24-480x287.jpg" alt=""
-                        width="480" height="287" />
-                    </div>
-                    <div class="product-classic-price"><span>$5000\mo</span></div>
-                  </div>
-                  <h4 class="product-classic-title"><a href="single-property.html">623 Willow Rd, Dallas</a></h4>
-                  <div class="product-classic-divider"></div>
-                  <ul class="product-classic-list">
-                    <li><span class="icon mdi mdi-vector-square"></span><span>530 Sq Ft</span></li>
-                    <li><span class="icon hotel-icon-10"></span><span>2 Bathrooms</span></li>
-                    <li><span class="icon hotel-icon-05"></span><span>2 Bedrooms</span></li>
-                    <li><span class="icon hotel-icon-26"></span><span>2 Garages</span></li>
-                  </ul>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-12 col-xl-6">
-                <!-- Product Classic-->
-                <article class="product-classic">
-                  <div class="product-classic-media">
-                    <div class="owl-carousel" data-items="1" data-nav="true" data-stage-padding="0" data-loop="false"
-                      data-margin="0" data-mouse-drag="false"><img src="images/featured-properties-25-480x287.jpg"
-                        alt="" width="480" height="287" /><img src="images/featured-properties-26-480x287.jpg" alt=""
-                        width="480" height="287" /><img src="images/featured-properties-27-480x287.jpg" alt=""
-                        width="480" height="287" /><img src="images/featured-properties-28-480x287.jpg" alt=""
-                        width="480" height="287" />
-                    </div>
-                    <div class="product-classic-price"><span>$5985\mo</span></div>
-                  </div>
-                  <h4 class="product-classic-title"><a href="single-property.html">9021 Charter Oak Ln, San Diego</a>
-                  </h4>
-                  <div class="product-classic-divider"></div>
-                  <ul class="product-classic-list">
-                    <li><span class="icon mdi mdi-vector-square"></span><span>485 Sq Ft</span></li>
-                    <li><span class="icon hotel-icon-10"></span><span>3 Bathrooms</span></li>
-                    <li><span class="icon hotel-icon-05"></span><span>2 Bedrooms</span></li>
-                    <li><span class="icon hotel-icon-26"></span><span>2 Garages</span></li>
-                  </ul>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-12 col-xl-6">
-                <!-- Product Classic-->
-                <article class="product-classic">
-                  <div class="product-classic-media">
-                    <div class="owl-carousel" data-items="1" data-nav="true" data-stage-padding="0" data-loop="false"
-                      data-margin="0" data-mouse-drag="false"><img src="images/featured-properties-29-480x287.jpg"
-                        alt="" width="480" height="287" /><img src="images/featured-properties-30-480x287.jpg" alt=""
-                        width="480" height="287" /><img src="images/featured-properties-31-480x287.jpg" alt=""
-                        width="480" height="287" /><img src="images/featured-properties-32-480x287.jpg" alt=""
-                        width="480" height="287" />
-                    </div>
-                    <div class="product-classic-price"><span>$3045\mo</span></div>
-                  </div>
-                  <h4 class="product-classic-title"><a href="single-property.html">3782 Broadway St, San Francisco</a>
-                  </h4>
-                  <div class="product-classic-divider"></div>
-                  <ul class="product-classic-list">
-                    <li><span class="icon mdi mdi-vector-square"></span><span>564 Sq Ft</span></li>
-                    <li><span class="icon hotel-icon-10"></span><span>2 Bathrooms</span></li>
-                    <li><span class="icon hotel-icon-05"></span><span>1 Bedroom</span></li>
-                    <li><span class="icon hotel-icon-26"></span><span>1 Garage</span></li>
-                  </ul>
-                </article>
-              </div>
+
+
             </div>
           </div>
           <div class="col-12">

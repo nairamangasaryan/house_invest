@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from django.views.generic import ListView, DetailView, TemplateView
+
+from .models import Property_rent, Property_sale
 
 # Create your views here.
 
@@ -7,8 +10,23 @@ def home(request):
     return render(request, "index.html")
 
 
-def houses(request):
-    return render(request, "houses.html")
+class Properties(ListView):
+    template_name="houses.html"
+    model = Property_rent
+    context_object_name="properties_rent"
+
+
+class RentProperties(ListView):
+    template_name="rent-houses.html"
+    model = Property_rent
+    context_object_name="properties_rent"
+
+class SaleProperties(ListView):
+    template_name="sale-houses.html"
+    model = Property_sale
+    context_object_name="properties_sale"
+
+
 
 
 def houses_list(request):
